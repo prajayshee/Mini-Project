@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.html">
+    <link rel="stylesheet" href="util.css">
+    <style>
+        body{
+            
+    background: url('/istockphoto-1307484579-170667a.jpg') no-repeat;
+    background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        input[type=text],input[type=password]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button{
+            background-color: black; 
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover{
+            opacity: 0.9;
+        }
+
+        .imgcontainer{
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+        .imgavtar{
+            width: 30%;
+            border-radius: 40%;
+        }
+   .modal{
+    background-color: blue;
+    overflow: auto;
+    padding-top: 60%;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    position: fixed;
+   } 
+   .modal-content{
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+
+   }  
+     .container{
+        padding: 30px;
+
+     }
+     span.psw{
+        float: right;
+        padding-top: 16px;
+
+     }
+
+     a{
+        text-decoration: none;
+     }
+    
+    </style>
+</head>
+<body>
+    <br><br>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+  
+        <ul class="menu__box">
+          <li><a class="menu__item" href="homepage.html">Home</a></li>
+          <li><a class="menu__item" href="#">About</a></li>
+          <li><a class="menu__item" href="#">Companies</a></li>
+          <!-- <li><a class="menu__item" href="contactus.html">Contact</a></li>
+           -->
+        </ul>
+      </div>
+  
+    
+    
+        <form class="modal-content animate" method="get">
+         <div class="imgcontainer"> <br>
+            <p><b style="font-size: 30px;">LOGIN</b> </p> <br><br><hr>
+    <!-- <img src="https://thumbs.dreamstime.com/b/vector-illustration-isolated-white-background-login-button-icon-127000119.jpg" alt="no image" width="200"
+             height="200"> -->
+    
+</div>
+
+<div class="container">
+
+
+ 
+<label >Username</label>
+<input type="text"placeholder="Username" required\><br>
+<br>
+ <!-- <label>Name</label>
+ <input type="password"placeholder="Name" required\><br>
+ <br>
+ <label >Email</label>
+<input type="text"placeholder="Email" required\><br>
+<br> -->
+ <label>Password</label>
+          <input type="password" placeholder="Password"  required\><br>
+          <br>
+
+<input type="checkbox">Remember me
+<br><br>
+
+<button type="submit" onclick="window.location.href = 'index.html'"> Login </button>
+<br> <br>
+<label>
+    <p>Forget Password? <a href="forgotpassword.html">Password</a></p>
+</label>
+<br>
+<label> 
+    <p>No Account? <a href="signup.html">Go to signup</a>
+    </p>
+
+</label>
+</div>
+</form>
+</div>
+
+<br /><br /><br /> 
+<br><br><br>
+    <!-- <footer class="footer">
+      <div class="container1">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+
+              <div class="footer-col">
+                  <h4>JMP IS ON:</h4>
+                  <div class="">
+                      <div style="text-align: left ;"> 
+                          <a href="https://play.google.com/">
+                            <img src="https://www.informatique-mania.com/wp-content/uploads/2020/12/Logo-app-Instalcion-Google-Play-Store.png" alt="App Store" width="130px"> 
+                          </a>
+                        </div>
+                        <div style="text-align: left;">
+                          <a href="https://www.apple.com/in" class="apple">
+                          <img src="https://w7.pngwing.com/pngs/422/842/png-transparent-apple-store-logo-app-store-android-google-play-get-started-now-button-text-logo-black.png" alt="App Store" width="130px">
+                          </a>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+ </footer> -->
+
+</body>
+</html>

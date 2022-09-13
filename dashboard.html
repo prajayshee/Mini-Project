@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="dashboard.js">
+  <link rel="stylesheet" href="util.css">
+</head>
+<body>
+  <section id="nav">
+    <div class="navLeft">
+        <h1>MyWork</h1>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search...">
+        <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" alt="">
+    </div>
+    <div class="navRight">
+        <div class="menu" onclick="toggle()">
+            <span class="bar b1"></span>
+            <span class="bar b2"></span>
+            <span class="bar b3"></span>
+        </div>
+        <ul id="navList">
+            <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/561/561127.png" alt=""><span>MESSAGE</span></a></li>
+            <li><a href="#"><img src="https://cdn-icons.flaticon.com/png/128/2529/premium/2529521.png?token=exp=1656315685~hmac=cbcb312235267fc52735e1a44572af88" alt=""><span>NOTIFICATION</span></a></li>
+            <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/709/709579.png" alt=""><span>TIMELINE</span></a></li>
+        </ul>
+    </div>
+  </section>
+  <section id="mid">
+    <div class="symbol" onclick="show()">
+        <span class="cross c1"></span>
+        <span class="cross c2"></span>
+    </div>
+    <div class="midLeft" id="work">
+        <div class="list">
+            <ul>
+                <li class="active"><img src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png" alt=""><span>DASHBOARD</span></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/1508/1508964.png" alt=""><span>REPORTS</span></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/833/833593.png" alt=""><span>CALENDAR</span></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/2099/2099058.png" alt=""><span>SETTINGS</span></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/1286/1286853.png" alt=""><span>LOG OUT</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="midMid">
+        <div class="midMid1">
+            <div class="topHead">
+                <h1>Dashboard</h1>
+                <p>Welcome The JMP !</p>
+            </div>
+            <!-- <ul>
+                <li><h3>21</h3><p>In Progress</p></li>
+                <li><h3>42</h3><p>Completed</p></li>
+                <li><h3>12</h3><p>To-Do</p></li>
+            </ul> -->
+        </div>
+        <div class="midMid2">
+            <ul id="option">
+                <li class="inactive">ALL</li><hr>
+                <li class="activeMid">PROGRESS</li><hr>
+                <li class="inactive">TO-DO</li><hr>
+                <li class="inactive">COMPLETED</li>
+            </ul>
+        </div>
+        <div class="midMid3">
+            <div class="progress1 progress">
+                <p>In Progress</p>
+                <h3>ABCDE Development</h3>
+                <p>Completed: 35/70</p>
+                <a href="#">Continue</a><br>
+                <progress value="35" max="70"></progress>
+                <h4>DUE: OCT 27, 2022</h4>
+            </div>
+            <div class="progress2 progress">
+                <p>In Progress</p>
+                <h3>XYZAb Development</h3>
+                <p>Completed: 21/80</p>
+                <a href="#">Continue</a><br>
+                <progress value="21" max="80"></progress>
+                <h4>DUE: SEPT 10, 2022</h4>
+            </div>
+            <div class="progress3 progress">
+                <p>In Progress</p>
+                <h3>QWERTY Development</h3>
+                <p>Completed: 56/60</p>
+                <a href="#">Continue</a><br>
+                <progress value="56" max="60"></progress>
+                <h4>DUE: AUG 5, 2022</h4>
+            </div>
+            <div class="progress4 progress">
+                <p>In Progress</p>
+                <h3>MNOP Development</h3>
+                <p>Completed: 12/100</p>
+                <a href="#">Continue</a><br>
+                <progress value="12" max="100"></progress>
+                <h4>DUE: NOV 30, 2022</h4>
+            </div>
+        </div>
+    </div>
+    <div class="midRight">
+        <h2>Your Activity</h2>
+        <ul>
+            <li><h3>You</h3><p>Completed today's task</p></li>
+            <li><h3>John Walker</h3><p>Attended report meeting at 3:00 PM</p></li>
+            <li><h3>You</h3><p>Hosted product meeting at 1:00 PM</p></li>
+            <li><h3>You</h3><p>Added new task to To-Do List</p></li>
+            <li><h3>John Walker</h3><p>Added new task</p></li>
+            <li><h3>You</h3>Hosted meeting with ABC company</li>
+            <li><h3>You</h3><p>Homepage Design for ABC product</p></li>
+            <li><h3>You</h3><p>Re-Design XYZ App</p></li>
+        </ul>
+        <a href="#">See More</a>
+    </div>
+  </section>
+  <!-- <section id="footer">
+    <a href="https://www.flaticon.com/" target="_blank">Image Credit</a> 
+    <a href="https://mycolor.space/?hex=%23845EC2&sub=1" target="_blank">Color Credit</a>
+  </section> -->
+  <footer class="footer">
+    <div class="container1">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>JMP IS ON:</h4>
+                <div class="">
+                    <div style="text-align: left ;"> 
+                        <a href="https://play.google.com/">
+                          <img src="https://www.informatique-mania.com/wp-content/uploads/2020/12/Logo-app-Instalcion-Google-Play-Store.png" alt="App Store" width="130px"> 
+                        </a>
+                      </div>
+                      <div style="text-align: left;">
+                        <a href="https://www.apple.com/in" class="apple">
+                        <img src="https://w7.pngwing.com/pngs/422/842/png-transparent-apple-store-logo-app-store-android-google-play-get-started-now-button-text-logo-black.png" alt="App Store" width="130px">
+                        </a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

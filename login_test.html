@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <link href='style.css' rel='stylesheet'>
+        <title>Login form</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='app.js' async></script>
+        <link rel="stylesheet" href="login_test.css">
+        <link rel="stylesheet" href="login_test.js">
+    </head>
+
+
+
+    <body>
+        <div class='wrapper'>
+            <div class='pcon'>
+                <h2>Welcome! Please login.</h2>
+                <form>
+                <div class='inputs'>
+                    <h3>Username</h3>
+                    <input type='text' class='textfield' id='un' required></input>
+                    <!-- <h3 class='forgot' id='fun'>Forgot username</h3> -->
+                </div>
+                <div class='inputs'>
+                    <h3>Password</h3>
+                    <input type='text' class='textfield' id='pw' required></input>
+                    <h3 class='forgot' id='fpw'>Forgot password</h3>
+                    <input type='checkbox'><label for='check' class='checkbox'>Remember me</label></input>
+                </div>
+                
+                <button class='btn' onclick="window.location.href = 'index.html'">Sign in</button>
+            </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>

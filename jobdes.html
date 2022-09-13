@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description</title>
+    <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="footer_test.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            background-image: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg");background-size: 1500px 550px;background-color:rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-position: bottom 100px right 1px left 2px;
+            line-height: 1.5;
+        }
+        
+        .job-offers {
+            margin-left: 4rem;
+            margin-right: 4rem;
+            display: flex;
+            justify-items: space-between;
+            align-items: center;
+        }
+
+        .job-offers>h1 {
+            font-weight: 700;
+            font-size: 30px;
+            
+            
+        }
+
+        .job-offers>a {
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+            font-weight: 700;
+
+        }
+
+        .jobs-section {
+            margin-left: 4rem;
+            margin-right: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+           
+        }
+
+        .job {
+
+            width: 38 0px;
+            border-right: 1px solid rgb(179, 179, 179);
+            padding-right: 10px;
+
+
+        }
+       
+
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 5 px;
+
+        }
+
+        .job-location {
+            /* display: flex; */
+            align-items: center;
+            padding-bottom: 10px;
+        }
+
+        .job-location>p {
+            margin-left: 5px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+
+        .job-description>p {
+            color: rgb(209, 209, 209);
+            font-weight: 600;
+
+        }
+
+        .feature-companies {
+            margin-left: 4rem;
+            margin-left: 4rem;
+            margin-bottom: 10vh;
+        }
+
+        .feature-companies {
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .companies-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .company {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .company>h2 {
+            font-size: 16px;
+        }
+
+        .icon-container {
+            /* border: 2px solid gray; */
+            padding: 5px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+        .offers{
+            text-align: right;
+            margin-bottom: 50px;
+            font-size: 23px;
+            margin-right: 40px;
+            text-decoration: underline;
+        }
+        .offers:hover{
+            color: blue;
+        }
+        a{
+            /* text-decoration: none; */
+            color: wheat;
+        }
+        /* a:hover{
+            color: wheat;
+        } */
+
+    </style>
+
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="login.html">Profile</a></li>
+      <li><a class="menu__item" href="homepage.html">Home</a></li>
+      <li><a class="menu__item" href="#">About</a></li>
+      <li><a class="menu__item" href="#">Companies</a></li>
+      <!-- <li><a class="menu__item" href="contactus.html">Contact</a></li>
+       -->
+    </ul>
+  </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="job-offers"></div>
+    <h1 style="text-align: center;" ><u>Newest Job Offers</u></h1>
+    <br><br><br><br><br><br><br><br><br><br>
+<div class="offers">
+    <a href="./viewalljob.HTML">View all job offers</a>
+</div>
+
+
+    <section class="jobs-section">
+        <div class="job">
+            <div class="job-title">
+                <h2>Junior Java Developer</h2>
+
+            </div>
+            <div class="job-location">
+                <h4>&nbsp;TCS</h4> 
+                <p>Pune</p>
+            </div>
+            <div class="job-description">
+
+                <p>We are looking for java developer. <br>
+                    A junior java developer creates user information solutions <br>
+                    by developing, implementing,
+                    and maintaining Java based components and interfaces. <br>
+                    The person in this job designs and develops high-volume, <br>
+                    low-latency applications for high performance and ability.</p>
+            </div>
+            <label class="line"> <br>
+                <p>Click here<a href="./juniorjavadev.HTML"> for further information</a>
+                </p>
+
+            </label>
+
+
+        </div>
+
+        <div class="job">
+            <div class="job-title"> 
+                <h2> &nbsp;&nbsp; Senior Software Engineer</h2>
+
+            </div>
+            
+            <div class="job-location">
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp; IBM</h4>
+                <p>&nbsp;&nbsp;&nbsp;Mumbai</p>
+            </div>
+            <ul>
+            <div class="job-description">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;We are looking for Senior Software Developer. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Main Responsibilities of Senior Software Engineer
+                    &nbsp;&nbsp;&nbsp;&nbsp;Writing well-designed, testable and efficient 
+                    &nbsp;&nbsp;&nbsp;&nbsp;code. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Building reusable components and libraries for &nbsp;&nbsp;&nbsp;&nbsp;future. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Troubleshooting and debugging to optimise &nbsp;&nbsp;&nbsp;&nbsp;performance. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Providing code documentation to technical &nbsp;&nbsp;&nbsp;&nbsp;documents. <br>
+                </p>
+            </div>
+            <label class="line">
+                <p> <br>&nbsp;  Click here <a href='/seniorsoftware.HTML'>for further information</a>
+                </p>
+            </label>
+        </div>
+    </ul>
+
+
+
+        <div class="job1">
+            <div class="job-title">
+                <h2>&nbsp;&nbsp; Junior Python Developer</h2>
+
+            </div>
+            <div class="job-location">
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Globant</h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Pune</p>
+            </div>
+            <ul>
+            <div class="job-description">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;I am looking for Junior python &nbsp;&nbsp;&nbsp;&nbsp;developer. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Python developers should posses the &nbsp;&nbsp;&nbsp;&nbsp;following skills and qualifications: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Knowledge of Python web frameworks &nbsp;&nbsp;&nbsp;&nbsp;and event-driven programming in &nbsp;&nbsp;&nbsp;&nbsp;Python. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Basic understanding of front-end &nbsp;&nbsp;&nbsp;&nbsp;technologies. High attention to detail.
+                </p>
+            </div>
+           
+            <br><br> &nbsp; Click here<a href='python.html'> for further information</a>   <br>
+
+
+        </div>
+    </ul>
+
+    </section>
+    <br><br>
+    <!-- <section class="feature-companies">
+        <h1>Featured Companies</h1>
+        <div class="companies-container">
+            <div class="company">
+                <div class="icon-container">
+                    <img src="https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg" alt="IBM"
+                    width="40px" height="25px">
+                </div>
+                <h2>IBM</h2>
+            </div>
+            <div class="company">
+                <div class="icon-container">
+                    <img src="https://scontent.fpnq12-1.fna.fbcdn.net/v/t1.6435-9/176190604_10159051158591250_8635375774627957691_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=YOklWk2VPK0AX-qWOWO&_nc_ht=scontent.fpnq12-1.fna&oh=00_AT_ewAT7eZxqu_LdFUjEAr5XvXYP3JqBMPEdGMulEmMqPQ&oe=63124D9A" alt="TCS"
+                    width="40px" height="25px">
+                </div>
+                <h2>TCS</h2>
+            </div>
+            <div class="company">
+                <div class="icon-container">
+                    <img src="https://scontent.fpnq12-1.fna.fbcdn.net/v/t1.6435-9/118460964_3211930412229754_1603084186065756426_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=108&ccb=1-7&_nc_sid=85a577&_nc_ohc=vBve5ycWFc8AX-q0Gl0&_nc_ht=scontent.fpnq12-1.fna&oh=00_AT9_oE4PDGYXGvswxlh924fU1aI__ivQrU2V8-uPAYs_WA&oe=630EB477" alt="INFOSYS"
+                    width="50px" height="25px">
+                </div>
+                <h2>INFOSYS</h2>
+            </div>
+            <div class="company">
+                <div class="icon-container">
+                    <img src="data:image/jpeg;base64,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" alt="Cognizant"
+                        width="90px" height="25px">
+                </div>
+                <h2>COGNIZANT</h2>
+            </div>
+            
+            <div class="company">
+                <div class="icon-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/640px-Dell_Logo.svg.png" alt="DELL"
+                    width="40px" height="25px">
+                </div>
+                <h2>DELL</h2>
+            </div>
+            <div class="company">
+                <div class="icon-container">
+                    <img src="https://www.seekpng.com/png/detail/198-1985773_accenture-lockup-accenture-logo-transparent-background.png" alt="ACCENTURE"
+                    width="40px" height="25px">
+                </div>
+                <h2>ACCENTURE</h2>
+            </div>
+            
+
+        </div>
+
+    </section> -->
+    <br /><br /><br /> <br><br><br>
+    <!-- <footer class="footer">
+      <div class="container1">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+
+              <div class="footer-col">
+                  <h4>JMP IS ON:</h4>
+                  <div class="">
+                      <div style="text-align: left ;"> 
+                          <a href="https://play.google.com/">
+                            <img src="https://www.informatique-mania.com/wp-content/uploads/2020/12/Logo-app-Instalcion-Google-Play-Store.png" alt="App Store" width="130px"> 
+                          </a>
+                        </div>
+                        <div style="text-align: left;">
+                          <a href="https://www.apple.com/in" class="apple">
+                          <img src="https://w7.pngwing.com/pngs/422/842/png-transparent-apple-store-logo-app-store-android-google-play-get-started-now-button-text-logo-black.png" alt="App Store" width="130px">
+                          </a>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+ </footer> -->
+
+ <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic"></div>
+          
+        </div>
+      
+        <div class="lower">
+          <!-- <h4>JMP IS ON:</h4> -->
+          <div class="topic">SetJobGo IS ON:</div> <br>
+          <div style="text-align: left ;"> 
+            <a href="https://play.google.com/">
+              <img src="https://www.informatique-mania.com/wp-content/uploads/2020/12/Logo-app-Instalcion-Google-Play-Store.png" alt="App Store" width="130px"> 
+            </a>
+          </div>
+          <div style="text-align: left;">
+            <a href="https://www.apple.com/in" class="apple">
+            <img src="apple-app-store-logo.jpg" alt="App Store" width="130px">
+            </a>
+          </div>
+        </div>
+        <!-- <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+          </div>
+        </div> -->
+      </div>
+  
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div><a href="#">Web Design, Development</a></div>
+        <div><a href="#">Web UX Design, Reasearch</a></div>
+        <div><a href="#">Web User Interface Design</a></div>
+        <div><a href="#">Theme Development, Design</a></div>
+        <div><a href="#">Mobile Application Design</a></div>
+        <div><a href="#">Wire raming & Prototyping</a></div>
+      </div>
+      <div class="right box">
+        <div class="topic"></div>
+        <form action="#">
+          
+          <div class="media-icons"> <div class="topic">Social Media</div> 
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom" style="text-align: center;"> <br>
+      <p>Copyright © 2022 <a href="#">SetJobGo</a>.&nbsp; All rights reserved</p>
+    </div>
+    <br><br>
+  </footer>
+  
+</body>
+
+</html>

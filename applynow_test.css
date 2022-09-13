@@ -1,0 +1,213 @@
+// VARIABLES
+$box-height: 40px;
+$border-radius: 5px;
+$space-between: 20px;
+$width-small: 600px;
+$space-between-small: 7px;
+
+$color-light: #f5f5f5;
+$color-medium: #dcdcdc;
+$color-dark: #c5c3c6;
+$color-accent-dark: #46494c;
+$color-accent-light: #3185fc;
+
+$font-em: "Poppins", sans-serif;
+$font-normal: "Open Sans", sans-serif;
+
+// DEFAULT VALUES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-normal;
+  font-size: 16px;
+  // border: 1px solid black;
+}
+
+@media (max-width: $width-small) {
+  * {
+    font-size: 14px;
+  }
+}
+
+// BODY + BACKGROUND
+body {
+  background: $color-light;
+  background-image: url("https://i.postimg.cc/BnhHF28S/nastuh-abootalebi-y-Wwob8kw-OCk-unsplash-modified.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+// MIXINS
+@mixin block($height) {
+  display: block;
+  margin: 10px 0;
+  padding: 5px 10px;
+  height: $height;
+  width: 100%;
+}
+
+@mixin border($radius) {
+  border-radius: $radius;
+  border: 1px solid $color-dark;
+}
+
+@mixin shadow($color) {
+  box-shadow: 0 0 6px $color;
+}
+
+// MAIN CONTAINER
+#main-container {
+  margin: $space-between auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: $width-small) {
+  #main-container {
+    margin: $space-between-small auto;
+  }
+}
+
+// HEADER
+header {
+  margin: $space-between;
+  padding: $space-between;
+  background: white;
+  @include border(3 * $border-radius);
+  @include shadow($color-accent-dark);
+}
+
+@media (max-width: $width-small) {
+  header {
+    margin: $space-between-small;
+    padding: $space-between-small;
+  }
+}
+
+#title {
+  margin: 10px auto;
+  text-align: center;
+  font-family: $font-em;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $color-accent-light;
+}
+
+#description {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: $color-accent-dark;
+}
+
+@media (max-width: $width-small) {
+  #title {
+    font-size: 22px;
+  }
+  #description {
+    font-size: 16px;
+  }
+}
+
+// FORM CONTAINER
+#form-container {
+  margin: $space-between;
+  padding: $space-between;
+  background: white;
+  @include border(3 * $border-radius);
+  @include shadow($color-accent-dark);
+}
+
+@media (max-width: $width-small) {
+  #form-container {
+    margin: $space-between-small;
+    padding: $space-between-small;
+  }
+}
+
+// QUESTIONS
+.question-container {
+  margin: $space-between;
+  background: white;
+}
+
+@media (max-width: $width-small) {
+  .question-container {
+    margin: $space-between-small;
+  }
+}
+
+.question-label {
+  @include block($box-height);
+  padding-top: 0;
+  line-height: $box-height;
+  font-weight: bold;
+  color: $color-accent-light;
+}
+
+.row-input {
+  @include block($box-height);
+  background: $color-light;
+  @include border($border-radius);
+  transition: box-shadow 0.3s;
+}
+
+.row-input:focus {
+  @include shadow($color-dark);
+}
+
+.option-group {
+  @include block(auto);
+  padding: 1px;
+  background: $color-light;
+  @include border($border-radius);
+}
+
+.option-container {
+  @include block($box-height * 0.75);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.option-label {
+  margin-left: 10px;
+  color: $color-accent-dark;
+}
+
+input:checked + .option-label {
+  font-weight: bold;
+}
+
+.big-size-input {
+  @extend .row-input;
+  height: 120px;
+  resize: none;
+}
+
+#submit {
+  margin: $space-between;
+  height: $box-height;
+  width: calc(100% - 2 * #{$space-between});
+  background: $color-accent-light;
+  @include border($border-radius);
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+@media (max-width: $width-small) {
+  #submit {
+    margin: $space-between-small;
+    width: calc(100% - 2 * #{$space-between-small});
+  }
+}
+
+#submit:hover {
+  @include shadow($color-dark);
+}

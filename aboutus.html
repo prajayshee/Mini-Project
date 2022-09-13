@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  color: black;
+}
+
+/* Caption text */
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: unset;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<style>
+  body{
+    background-color: black;
+  }
+      .box {
+        background-color:rgb(88, 88, 88);
+        color: white;
+        display: center;
+        padding: 10px;
+      }
+    </style>
+
+
+
+<style>
+        .fa:hover {
+            opacity: 0.9;
+        }
+  
+        .fa-tcs {
+          
+            color: white;
+        }
+  
+        .fa-ibm {
+            
+            color: white;
+        }
+  
+        .fa-fev {
+            
+            color: white;
+        }
+  
+        .fa {
+            padding: 20px;
+            font-size: 40px;
+            width: 80px;
+            text-decoration: none;
+            margin: 5px 80px;
+        }
+  
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="box">
+<h2 style="color:rgb(255, 255, 255);"><center>About SetJobGo</center></h2>
+ <p><center>Looking to hire qualified, remote workers for your current openings?  </p>
+        <p>With JMP, your ideal candidates are just a click away! </center></p>
+
+</div>
+
+        <br> <br>
+ 
+
+<h2 style="color:white;"><center>Core Values</center></h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="https://hbr.org/resources/images/article_assets/2019/11/Nov19_22_101952635.jpg" style="width:100%">
+  <div class="text"><p style="color: white;">Innovation</p>
+          <p>We are a constant work in progress. We challenge the status quo in everything we do & endeavor to become better.</p></div>
+</div>
+
+<div class="mySlides fade">
+ <br>
+  <img src="https://datafloq.com/wp-content/uploads/2021/12/blog_pictures2FOutsourcing_Quality_Assurance.jpg" style="width:98% " >
+  <div class="text"><p style="color: white;">Quality</p>
+          <p>We strive for excellence & aim to deliver high-quality, unrivaled services that surpass expectations.</p></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://s3.amazonaws.com/vetter-prod-vetter-public-files/photos/129/continuous-improvement-define.jpg" style="width:100%">
+  <div class="text"> <p style="color: rgb(255, 255, 255);">Continuous Improvement</p>
+          <p>Each day, we push our boundaries by viewing business from a Glass Half Empty perspective to pursue incremental improvement.</p></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br><br>
+
+
+
+<div class="box">
+<center>
+        <h1>Some of Our Clients</h1>
+        
+  
+        <!-- Add font awesome icons -->
+        
+       <img src="https://tse1.mm.bing.net/th?id=OIP.r_jAQxesjeU7l9L7-xRDtAHaHa&pid=Api&P=0" class="fa fa-tcs">
+       <img src="https://tse1.mm.bing.net/th?id=OIP.ibMPhGZhcAJQzM8OFOVNjwHaE6&pid=Api&P=0" class="fa fa-ibm">
+       <img src="https://tse4.mm.bing.net/th?id=OIP.Z9YIP_zisPa10CTKlOvb_gHaHa&pid=Api&P=0" class="fa fa-fev">
+       <img src="https://tse4.mm.bing.net/th?id=OIP.CZiR9heg2GmL3d06NR7StQHaEx&pid=Api&P=0" class="fa fa-tcs">
+        
+    </center>
+
+</div>
+
+<br><br>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
